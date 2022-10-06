@@ -1,21 +1,23 @@
 require('jsdom-global')();
 
-// Global definition is not possible to avoid global pollution! Sad.
-// Does anyone know of a solution?
-module.exports = {
+
+(() => {
+    // Global definition is not possible to avoid global pollution!
+
     /**
-     * Returns window
-     * @returns {Window & typeof globalThis}
-     */
-    getWindow: () => {
+    * Returns window
+    * @returns {Window & typeof globalThis}
+    */
+    const getWindow = () => {
         return window
-    },
+    }
+
     /**
      * Load the web library
      * @param {String} lib path, URL, or library contents
      * @returns {Promise<*>}
      */
-    loadLibrary: (lib) => {
+    const loadLibrary = (lib) => {
         return new Promise(async (resolve, reject) => {
             // Do the reading inside the function to avoid global contamination, ahh
             const { parse } = require('node:path');
@@ -50,4 +52,6 @@ module.exports = {
             }
         });
     }
-}
+
+    module.exports = {getWindow, loadLibrary}
+})();

@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Otatoge/weblib-node.git"
   },
-  "keywords": [],
+  "keywords": [
+    "jsdom",
+    "web",
+    "node"
+  ],
   "author": "otatoge <otatoge@gmail.com> (https://github.com/otatoge)",
   "license": "ISC",
   "bugs": {
