@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/Otatoge/weblib-node#readme",
   "dependencies": {
+    "jsdom": "^20.0.1",
+    "jsdom-global": "^3.0.2",
     "node-fetch": "^2.6.7"
   }
 }
