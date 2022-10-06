@@ -17,7 +17,7 @@ require('jsdom-global')();
      * @param {String} lib path, URL, or library contents
      * @returns {Promise<*>}
      */
-    const loadLibrary = (lib) => {
+    const loadLib = (lib) => {
         return new Promise(async (resolve, reject) => {
             // Do the reading inside the function to avoid global contamination, ahh
             const { parse } = require('node:path');
@@ -53,5 +53,5 @@ require('jsdom-global')();
         });
     }
 
-    module.exports = {getWindow, loadLibrary}
+    module.exports = {getWindow, loadLib}
 })();
