@@ -1,0 +1,23 @@
+{
+  "name": "weblib-node",
+  "version": "1.0.0",
+  "description": "Use a library for web with node using jsdom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otatoge/weblib-node.git"
+  },
+  "keywords": [],
+  "author": "otatoge <otatoge@gmail.com> (https://github.com/otatoge)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Otatoge/weblib-node/issues"
+  },
+  "homepage": "https://github.com/Otatoge/weblib-node#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
