@@ -1,6 +1,6 @@
 {
   "name": "weblib-node",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Use a library for web with node using jsdom",
   "main": "index.js",
   "scripts": {
