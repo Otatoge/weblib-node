@@ -18,7 +18,13 @@ require('jsdom-global')();
      * @returns {Promise<*>}
      */
     const loadLib = (lib) => {
-        return (()=>new Function(lib)())();
+        return new Promise((resolve, reject) => {
+            try{
+                resolve((new Function(lib))());
+            }catch(e){
+                reject(e);
+            }
+        });
     }
 
     module.exports = {getWindow, loadLib}
