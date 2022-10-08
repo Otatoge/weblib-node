@@ -9,7 +9,7 @@ require('jsdom-global')();
     * @returns {Window & typeof globalThis}
     */
     const getWindow = () => {
-        return window
+        return globalThis
     }
 
     /**
