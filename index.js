@@ -19,13 +19,13 @@ require('jsdom-global')();
      */
     const loadLib = (lib) => {
         return new Promise((resolve, reject) => {
-            try{
+            try {
                 resolve((new Function(lib))());
-            }catch(e){
+            } catch (e) {
                 reject(e);
             }
         });
     }
 
-    module.exports = {getWindow, loadLib}
+    module.exports = { getWindow, loadLib }
 })();
